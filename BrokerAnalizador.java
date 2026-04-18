@@ -27,10 +27,10 @@ public class BrokerAnalizador extends Thread {
                 //multiplo de 8
                 if (numeroAleatorio % 8 == 0) {
                     buzonAlertas.depositar(evento);
-                    System.out.println("[Broker] Evento " + evento.getIdEvento()+ " marcado como sospechoso y enviado al buzón de alertas.");
+                    System.out.println("[Broker] Evento " + evento.getIdEvento()+ " con número " + numeroAleatorio +" marcado como sospechoso y enviado al buzón de alertas.");
                 } else {
                     buzonClasificacion.depositar(evento);
-                    System.out.println("[Broker] Evento " + evento.getIdEvento()+ "considerado normal y enviado al buzón de clasificación.");
+                    System.out.println("[Broker] Evento " + evento.getIdEvento()+ " con número " + numeroAleatorio +" considerado normal y enviado al buzón de clasificación.");
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();

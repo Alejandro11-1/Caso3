@@ -31,9 +31,9 @@ public class Administrador extends Thread {
                 //multiplo de 4
                 if (numeroAleatorio % 4 == 0) {
                     buzonClasificacion.depositar(evento);
-                    System.out.println("[Administrador] Evento " + evento.getIdEvento()+ " pasó la inspección y fue enviado al buzón de clasificación.");
+                    System.out.println("[Administrador] Evento " + evento.getIdEvento()+ " con número " + numeroAleatorio +" pasó la inspección y fue enviado al buzón de clasificación.");
                 } else {
-                    System.out.println("[Administrador] Evento " + evento.getIdEvento()+ " confirmado como malicioso y descartado.");
+                    System.out.println("[Administrador] Evento " + evento.getIdEvento()+ " con número " + numeroAleatorio +" confirmado como malicioso y descartado.");
                 }
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();

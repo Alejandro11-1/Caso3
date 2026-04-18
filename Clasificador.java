@@ -36,7 +36,6 @@ public class Clasificador extends Thread {
                     }
                     break;
                 }
-
                 int servidorDestino = evento.getTipo() - 1;
                 buzonesConsolidacion[servidorDestino].depositar(evento);
 
