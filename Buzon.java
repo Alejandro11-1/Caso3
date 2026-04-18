@@ -14,7 +14,6 @@ public abstract class Buzon {
     public synchronized boolean estaVacio() {
         return cola.isEmpty();
     }
-
     public synchronized int cantidadEventos() {
         return cola.size();
     }
