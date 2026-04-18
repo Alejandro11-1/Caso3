@@ -23,7 +23,7 @@ public class Sensor extends Thread {
 
             try {
                 buzonEntrada.depositar(evento);
-                System.out.println("[Sensor" + idSensor + "] Generó evento " +
+                System.out.println("[Sensor " + idSensor + "] Generó evento " +
                  evento.getIdEvento() +" con tipo " + evento.getTipo());
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
